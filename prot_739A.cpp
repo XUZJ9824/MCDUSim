@@ -64,8 +64,8 @@ enum enu_state
 
 };
 
-//const int m_mcduID[4] = { 0220LU, 0221LU, 0222LU, 0230LU };
-const int m_mcduID[4] = {0356LU, 0356LU, 0356LU, 0356LU};
+const int m_mcduID[5] = { 0220LU, 0221LU, 0222LU, 0230LU, 0356LU}; //Append 5th Label for BITE
+//const int m_mcduID[4] = {0356LU, 0356LU, 0356LU, 0356LU};
 
 void OnRx_Helper(void * pThis, long wordRx, int which_mcdu)
 {

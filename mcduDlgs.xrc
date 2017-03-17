@@ -25,7 +25,7 @@
                   <font>
                     <weight>bold</weight>
                   </font>
-                  <label>MCDU Number: </label>
+                  <label>MCDU/BITE Num: </label>
                 </object>
               </object>
               <object class="sizeritem">
@@ -33,10 +33,11 @@
                 <object class="wxChoice" name="ID_COMBO_MCDU">
                   <size>120,-1</size>
                   <content>
-                    <item>1</item>
-                    <item>2</item>
-                    <item>3</item>
-                    <item>4</item>
+                    <item>MCDU1</item>
+                    <item>MCDU2</item>
+                    <item>MCDU3</item>
+                    <item>MCDU4</item>
+                    <item>BITE</item>
                   </content>
                 </object>
               </object>

@@ -68,13 +68,13 @@ private:
     ///////////////////////////////////////////////////////////////
     SOCKET m_serversocket;
     struct sockaddr_in m_dest;
-    int m_udpReadPort;
-    int m_udpWritePort;
     std::string m_dest_ip;
     ///////////////////////////////////////////////////////////////
 public:                     // for use in BG threads for error messages
     char *                  PipeName_Server(void) { return m_sPipeName_Server; }
     char *                  PipeName_Client(void) { return m_sPipeName_Client; }
+	int m_udpReadPort;
+    int m_udpWritePort;
 
 private:
     BOOL                    m_bQuittingTime;

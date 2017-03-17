@@ -21,7 +21,7 @@
 extern long gNoFilters;                 // in mcduSim.cpp, non-zero means don't use filters
 
 // MCDU Address Label (or MAL): see ARINC 739A, Attachment 1 or Attachment 2
-static const int m_mcduID[4] = { 0220LU, 0221LU, 0222LU, 0230LU };
+static const int m_mcduID[5] = { 0220LU, 0221LU, 0222LU, 0230LU, 0356LU}; //Append 5th Label for BITE
 
 int Ignore_This_Rx_Word(long r) // return 1 to ignore it, 0 to accept it
 {

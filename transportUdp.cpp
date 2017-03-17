@@ -271,12 +271,17 @@ CUdpHandler::CUdpHandler(int which_mcdu/*0,1,2,3*/, char * remote_ip_address, lo
          if(bind(m_serversocket, (SOCKADDR*)&serveraddr,sizeof(SOCKADDR_IN)) < 0) {
             log_printf("ERROR binding in the server socket on %s(%d)\n", our_ident, which_mcdu+1);
         } else {
+
+			log_printf("binding reading port %d, %s(%d)\n", m_udpReadPort, our_ident, which_mcdu+1);
+
             m_hReaderThread = (HANDLE) _beginthreadex(NULL, 0, UdpReaderThread, this, 0, &m_nReaderThreadId);
             //m_hWriterThread = (HANDLE) _beginthreadex(NULL, 0, UdpWriterThread, this, 0, &m_nWriterThreadId);
 
             m_dest.sin_family = AF_INET;
             m_dest.sin_port = htons(m_udpWritePort);
             m_dest.sin_addr.s_addr = inet_addr(m_dest_ip.data());
+
+			log_printf("setup writting port %d, %s(%d)\n", m_udpWritePort, our_ident, which_mcdu+1);
 
             Allow_Write();
          }
@@ -752,7 +757,7 @@ bool CTransportUdp::sendWord (long txWord, int mcdu ) /* true = success, false =
     //#endif //WANT_SHOW_INTERESTING_TX
 
     if (bTraceTxWord && DEBUG_MCDU(m_udp_haldler)) {
-        log_printf ("%sTx #%d: 0x%08X\n", our_indent, m_udp_haldler->MCDU()+1, txWord);
+        log_printf ("%sTx #%d, Port %d: 0x%08X\n", our_indent, m_udp_haldler->m_udpWritePort, m_udp_haldler->MCDU()+1, txWord);
     }
 
     } /*context*/

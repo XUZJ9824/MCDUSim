@@ -164,6 +164,10 @@ void CConfDlg::EnableOrDisableComboBoxes(long connectionType)
     m_cmb_tx_speed  ->Enable(want_enable);
     m_cmb_rx        ->Enable(want_enable);
     m_cmb_rx_speed  ->Enable(want_enable);
+
+	m_dim_input_label ->Enable(false);
+	m_dim_output_label->Enable(false);
+
 }
 
 /*!
@@ -243,7 +247,7 @@ bool CConfDlg::CreateControls()
 ////@begin CConfDlg content initialisation
 ////@end CConfDlg content initialisation
     //printf("CConfDlg::CreateControls\n");
-    //m_cmb_mcdu->SetValue(wxT("2"));
+    //m_cmb_mcdu->SetValue(wxT("MCDU2"));
 
     m_cmb_mcdu          ->Select(gConfig.cfgMcdu            - 1 );
 
