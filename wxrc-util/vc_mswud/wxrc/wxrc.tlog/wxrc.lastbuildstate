@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v140:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=8.1
+Debug|Win32|\\ch01w0103\CNSCOE\P_CommNav\Projects\IMMR_Airbus\Bench\MCDUsim\mcdusim\|

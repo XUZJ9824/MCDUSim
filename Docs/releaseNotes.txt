@@ -1,0 +1,169 @@
+
+Installer Version 100
+=====================
+
+Nov 25, 2009
+
+- Version format for Installer (Bundle) now is
+  3 digits to comply with EMS system.
+
+  comment: MCDU Sim will try to match its version number with the bunble as following:
+
+
+  M.T.UU where T.UU would match with TUU. Real sample:
+    Bundle 100 will have MCDU Sim with version 2.1.00
+
+- MCDU "About" dialog now shows License and the EMS Part Number: "PN: 1252-SW-3801"
+
+- New SKIN.
+
+- mTem was removed from MCDU installer. It got a separated installer.
+
+- MCDU Installer shows license and user must agree to proceed.
+
+- User Guide was updated.
+
+- The name of connection type "Serial" has changed to "UDP".
+
+- The default connection type is now (ARINC) DDC.
+
+
+
+
+Installer Version 1.1.28
+========================
+
+Nov 16, 2009
+
+- mcdusim: 
+	- MENU key sends LOGOFF command to SDU.
+	- TechSat: fix card index; before, selecting 1 or 2 was addressing the same
+          first box and 3 would address the next one. Now the correlation is 1:1.
+- Installer:
+	- CMCSim shortcut starts app with -c argument (config).
+
+Installer Version 1.1.27
+========================
+
+Oct 20, 2009
+
+- mcdusim: 
+	- Added Text mode screenshots (to file and Clipboard).
+	- Bugfix: Python SendKey was not returning OK when MCDU was displaying its own MENU screen.
+
+
+Installer Version 1.1.26
+========================
+
+Oct 09, 2009
+
+- mcdusim: 
+	- Added a MCDU Main Menu.
+
+
+Installer Version 1.1.23
+========================
+
+Oct 05, 2009
+
+- mcdusim: 
+	- fixed support for ARINC TechSat as the driver inverts labels.
+
+Installer Version 1.1.22
+========================
+
+Oct 05, 2009
+
+- mcdusim: 
+	- Added support for ARINC TechSat.
+	- Added support to use PC Keyboard.
+
+
+
+
+Installer Version 1.0.20
+========================
+
+Oct 01, 2009
+
+- mcdusim: fix a bug that prevented python socket to be
+  created when ARINC bus was in use.
+
+
+
+Installer Version 1.0.19
+========================
+
+Sep 24, 2009
+
+- Added CMC Simulator ver 0.1.2
+
+
+
+Installer Version 1.0.18
+========================
+
+Aug 27, 2009
+
+- mTerm ver 0.04 sends heartbeat to HSD every 8 seconds once gets any valid frame.
+- MCDU Sim ver 1.0.18 just to match with release number but had no change.
+
+
+Installer Version 1.0.17
+========================
+
+Aug 25, 2009
+
+- Added protection on UDP receiver: BGAN simulator sends packets to port 5002 and it was longer
+Than RX buffer. Now mcdusim receives and drops it.
+
+
+Installer Version 1.0.16
+========================
+
+Aug 14, 2009
+
+- Bugfix: MCDUs were not dropping msgs for other MCDU's.
+          this bug was added by ver 1.0.15
+
+
+Installer Version 1.0.15
+========================
+
+Aug 13, 2009
+
+- Bugfix:
+	- MCDU ID is now being sent avery second;
+	- When missing SAL timesout MCDU is ready to restart session.
+
+
+Installer Version 1.0.14
+========================
+
+July 22, 2009
+
+- Python server is enabled by default.
+  - cmd line option --python was removed.
+  - cmd line option --nopython was added.
+  - replaced module "emstools.pyc" with "emstools.py" (source module rathen than pre-compiled).
+
+
+Installer Version 1.0.12
+========================
+
+July 14, 2009
+
+- Telnet server (for Python interface) added to mTerm.
+  - mTerm version: 0.03
+  - McduSim: 1.0.11
+
+
+Installer Version 1.0.11
+========================
+
+Jun 23, 2009
+
+- Python interface:
+  - removed protection to allow scripts to run in other machines.
+  - emstools.py: McduSimCom constructor now takes an optional IP address for a remote McduSim.
+

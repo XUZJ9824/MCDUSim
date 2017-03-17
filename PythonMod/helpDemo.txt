@@ -1,0 +1,20 @@
+
+import sys
+
+sys.path.append("C:\mvprojects\mcdusim\PythonMod")
+
+
+import loadPhoneBook
+
+loadPhoneBook.DownloadPhonebook("C:\mvprojects\mcdusim\PythonMod\PhoneList.txt",2,2)
+
+------------------------------------------------------------------
+
+import emstools
+
+m = emstools.McduSimCom()
+
+m.SendKey("SER6",2)
+
+m.SendText("ABC")
+

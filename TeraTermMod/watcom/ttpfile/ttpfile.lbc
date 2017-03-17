@@ -1,0 +1,12 @@
+++_GetSetupFname@12.ttpfile.1
+++_GetTransFname@16.ttpfile.2
+++_GetMultiFname@16.ttpfile.3
+++_GetGetFname@8.ttpfile.4
+++_SetFileVar@4.ttpfile.5
+++_GetXFname@20.ttpfile.6
+
+++_ProtoInit@20.ttpfile.7
+++_ProtoParse@16.ttpfile.8
+++_ProtoTimeOutProc@16.ttpfile.9
+++_ProtoCancel@16.ttpfile.10
+

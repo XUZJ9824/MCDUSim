@@ -1,0 +1,108 @@
+;
+;
+;
+; $Header: /CPSoftware/Utilities/mcdusim/techsat/PASCAL/usb32nhp.def,v 1.1 2009/11/20 13:39:02 ems-tcanada\varanda.m Exp $
+;
+;
+;
+;
+;
+;
+;
+LIBRARY   usb32nhp
+EXPORTS
+	_open_xpc@4
+	_close_xpc@4
+;	UsbDeviceIoControl
+	_usb_open_debugs
+	_verify_iflib_version@4
+	_xpc_get_lasterror@0
+	_reset_selftest@12
+	_reset_and_selftest@16
+	_get_selftest_diagnostics@12
+	_activate_rec@20
+	_lv_activate_rec@32
+	_activate_trans@16
+	_lv_activate_trans@20
+	_config_rec@12
+	_config_trans@20
+	_define_trans@24
+	_lv_define_trans@36
+	_delete_trans@24
+	_lv_delete_trans@24
+	_define_trigger@20
+	_lv_define_trigger@40
+	_establish_loop@8
+	_get_arinc_board_type@12
+	_get_transmitter_set@12
+	_lv_get_transmitter_set@16
+	_get_firmware_version@8
+	_get_receiver_data_ready@20
+	_get_data_ready@8
+	_get_ticks_mpcboard@8
+	_get_ticks@12
+	_get_tx_definitions@20
+	_lv_get_tx_definitions@48
+	_get_single_tx_definition@20
+	_lv_get_single_tx_definition@44
+	_get_tx_timeslice@12
+	_get_trigger_state@12
+	_read_receiver_buffer@20
+	_lv_read_receiver_buffer@28
+	_set_rec_buf_size@20
+	_set_tx_mode@12
+	_set_trigger_state@16
+	_update_trans@16
+	_lv_update_trans@24
+	_get_rec_buf_count@16
+	_get_receiver_mode@12
+	_set_timestamp_synchro_mode@16
+	_set_timestamp_res@24
+	_get_timestamp_res@24
+	_get_in_state@4
+	_set_out_state@8
+	_define_manipulation@28
+	_define_trans_func@24
+	_activate_manipulation@16
+	_activate_data_replay@16
+	_define_data_replay@12
+	_download_data_replay@20
+	_get_tx_status@12
+	_get_manipulation@16
+	_get_receiver_data_lost@8
+	_get_receiver_data_exist@8
+	_reset_data_lost@8
+        _get_card_ident@8
+        _set_trans_wave@12
+        _set_parity_mode@12
+        _config_input@20
+	_set_trigger_state@16
+        _get_status_word@12
+        _reset_clock@8
+        _get_ext_ticks@16
+        _usb_get_eeprom_hw_config@8
+	_set_high_resolution@12
+	_get_fw_version@12
+	_activate_rx_trigger_mode@12
+	_activate_tx_trigger_mode@12
+	_get_memory@16
+	_pro_start_job@24
+	_pro_end_job@8
+	_pro_get_job_status@16
+	_pro_send_command@12
+	_pro_expect_response@12
+	_pro_send_command_expect_response@16
+	_pro_send_block@12
+	_pro_send_block_expect_response@16
+	_pro_send_command_expect_block@16
+	_pro_expect_block@12
+	_pro_get_command_timestamp@12
+	_pro_get_response_data@12
+	_pro_get_tx_block_timestamps@16
+	_pro_get_rx_block_data@16
+	_activate_rx_indexed_mode@16
+	_read_indexed_data@24
+	_read_all_indexed_data@16
+	_usb_set_discretes@12
+	_usb_get_discretes@8
+	

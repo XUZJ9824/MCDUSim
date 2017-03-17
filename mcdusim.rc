@@ -1,0 +1,51 @@
+#include "resource.h"
+
+mcdusim             ICON    "res/mcdusim.ico"
+mcducfg             ICON    "res/mcdu-cfg.ico"
+
+IDB_STD_IDLE        BITMAP  "res/MCDU.bmp"
+IDB_STD_MOUSE_OVER  BITMAP  "res/MCDU_cursorOver.bmp"
+IDB_STD_PRESSED     BITMAP  "res/MCDU_pressed.bmp"
+IDB_TCP_IDLE        BITMAP  "res/TCP-normal.bmp"
+IDB_TCP_MOUSE_OVER  BITMAP  "res/TCP-mouse.bmp"
+IDB_TCP_PRESSED     BITMAP  "res/TCP-pressed.bmp"
+
+#include "wx/msw/wx.rc"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,1,02,0
+ PRODUCTVERSION 1252,0,3801,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "FileVersion",      "31-May-2012"
+            VALUE "ProductVersion",   "1252-SW-3801"
+            VALUE "FileDescription",  "MCDU Simulator"
+            VALUE "ProductName",      "MCDU Simulator"
+            VALUE "InternalName",     "mcduSim.exe"
+            VALUE "OriginalFilename", "mcduSim.exe (31-May-2012)"
+            VALUE "CompanyName",      "EMS SATCOM"
+            VALUE "LegalCopyright",   "© 2012 EMS SATCOM. All rights reserved."
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END

@@ -1,0 +1,106 @@
+;Module Name:
+;
+;    A429USBDrv.INF
+
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=A429USB
+ClassGuid={56DA9F2C-736E-46a9-9915-3550A84B0890}
+Provider=%MFGNAME%
+DriverVer=01/29/2007
+CatalogFile=A429USB.cat
+
+
+;;top level section for device installation. contains the list of
+;;devices for which this INF file is meant
+[Manufacturer]                          
+%MFGNAME%=DeviceList
+
+;;identify the source disks of the installation package
+[SourceDisksNames]
+1=%INST_DISK_NAME%
+
+
+[SourceDisksFiles]
+A429USBDrv.sys=1,,
+WdfCoinstaller01001.dll=1,,
+
+;;specifiy the destination folder for the different CopyFiles sections.
+;;all file actions that do not have a key in the DecstinationDirs section
+;;will be done in to DefaultDestDir
+;;WDM and WDF drivers have to go into %windir%\system32\drivers
+;;%windir% has number 10. %windir%\system32 has number 11
+[DestinationDirs]
+DefaultDestDir=10,System32\drivers              
+ClassInstall32_CopyFiles=11
+CoInstaller_CopyFiles = 11
+
+;;Specify the list of devices that are
+;;supported by our driver.
+[DeviceList]
+%DEV_DESCRIPTION%=DriverInstall,USB\VID_118C&PID_0931&REV_0000
+
+; ================= Class section =====================
+
+[ClassInstall32]
+AddReg=ClassInstall32_AddReg
+CopyFiles=ClassInstall32_CopyFiles   
+
+[ClassInstall32_AddReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+
+[ClassInstall32_CopyFiles]	
+
+;;specify that this is the installation
+;;for nt based systems.
+[DriverInstall.ntx86]
+DriverVer=01/29/2007,1.2.0.0
+
+CopyFiles=DriverCopyFiles
+
+[DriverCopyFiles]
+A429USBDrv.sys,,,2
+
+;;tell the PNP manager which file contains the entry point, and
+;;how it has to start.
+[DriverInstall.ntx86.Services]
+AddService=wdf_A429USBDrv,2,DriverService
+
+[DriverService]
+ServiceType=1                           ;;kernel mode driver
+StartType=3                             ;;start on demand
+ErrorControl=1                          ;;normal error handling.
+ServiceBinary=%10%\system32\drivers\A429USBDrv.sys
+
+[DriverInstall.ntx86.hw]
+AddReg=DriverHwAddReg
+
+[DriverHwAddReg]
+HKR,,SampleInfo,,"A429USBDrv registry key"
+
+;-------------- WDF Coinstaller installation
+
+[DriverInstall.ntx86.CoInstallers]
+AddReg=CoInstaller_AddReg
+CopyFiles=CoInstaller_CopyFiles
+
+[CoInstaller_CopyFiles]
+wdfcoinstaller01001.dll,,,2
+
+[CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "wdfcoinstaller01001.dll,WdfCoInstaller"
+
+[DriverInstall.ntx86.Wdf]
+KmdfService = A429USBDrv, A429USBDrv_wdfsect
+[A429USBDrv_wdfsect]
+KmdfLibraryVersion = 1.1
+
+;---------------------------------------------------------------;
+
+[Strings]
+MFGNAME="TechSAT"
+INST_DISK_NAME="A429 USB Driver Installation Disk"
+ClassName       = "ARINC-429 USB Device"
+DEV_DESCRIPTION = "TechSAT ARINC-429 <-> USB Adapter"

@@ -1,0 +1,125 @@
+Microsoft Developer Studio Workspace File, Format Version 5.00
+# Warning: do not edit or delete this workspace file.
+
+###############################################################################
+
+Project: "keycode"=.\keycode\keycode.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ttermpro"=.\ttermpro.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ttpcmn
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ttpcmn"=.\ttpcmn\ttpcmn.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ttpdlg"=.\ttpdlg\ttpdlg.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ttpcmn
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ttpfile"=.\ttpfile\ttpfile.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ttpcmn
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ttpmacro"=.\ttpmacro\ttpmacro.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ttpset"=.\ttpset\ttpset.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ttptek"=.\ttptek\ttptek.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ttpcmn
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

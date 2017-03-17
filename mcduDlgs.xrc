@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns="http://www.wxwidgets.org/wxxrc" version="2.5.3.0">
+    <object class="wxDialog" name="ID_CONFDLG">
+        <style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER|wxTAB_TRAVERSAL</style>
+        <exstyle>wxWS_EX_BLOCK_EVENTS</exstyle>
+        <title>MCDU Simulator Configuration</title>
+        <centered>1</centered>
+
+        <object class="wxGridSizer">
+            <rows>17</rows>
+            <cols>1</cols>
+            <vgap>2</vgap>
+            <hgap>0</hgap>
+            <orient>wxHORIZONTAL</orient>
+
+          <!-- MCDU Number: [ID_COMBO_MCDU] combobox -->
+
+          <object class="sizeritem">
+            <flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT</flag>
+            <object class="wxBoxSizer">
+              <orient>wxHORIZONTAL</orient>
+              <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL</flag>
+                <object class="wxStaticText" name="wxID_STATIC">
+                  <font>
+                    <weight>bold</weight>
+                  </font>
+                  <label>MCDU Number: </label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL</flag>
+                <object class="wxChoice" name="ID_COMBO_MCDU">
+                  <size>120,-1</size>
+                  <content>
+                    <item>1</item>
+                    <item>2</item>
+                    <item>3</item>
+                    <item>4</item>
+                  </content>
+                </object>
+              </object>
+            </object>
+          </object>
+
+          <!-- MCDU Number: [ID_COMBO_APPEARANCE] combobox -->
+
+          <object class="sizeritem">
+            <flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT</flag>
+            <object class="wxBoxSizer">
+              <orient>wxHORIZONTAL</orient>
+              <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL</flag>
+                <object class="wxStaticText" name="wxID_STATIC">
+                  <font>
+                    <weight>bold</weight>
+                  </font>
+                  <label>MCDU Type: </label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL</flag>
+                <object class="wxChoice" name="ID_COMBO_APPEARANCE">
+                  <size>120,-1</size>
+                  <content>
+                    <item>Standard (14 lines)</item>
+                    <item>TCP (10 lines)</item>
+                  </content>
+                </object>
+              </object>
+            </object>
+          </object>
+
+          <!-- Connection: [ID_COMBO_CONNECTION_TYPE] combobox -->
+
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT</flag>
+                <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxStaticText" name="wxID_STATIC">
+                            <font>
+                                <weight>bold</weight>
+                            </font>
+                            <label>Connection: </label>
+                        </object>
+                    </object>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxChoice" name="ID_COMBO_CONNECTION_TYPE">
+                            <size>120,-1</size>
+                            <content>
+                                <item>UDP</item>
+                                <item>DDC</item>
+                                <item>TechSat</item>
+                                <item>(Simulated)</item>
+                            </content>
+                        </object>
+                    </object>
+                </object>
+            </object>
+
+            <!--ARINC Card: [ID_COMBO_CARD] combobox -->
+            
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT</flag>
+                <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxStaticText" name="wxID_STATIC">
+                            <font>
+                                <weight>bold</weight>
+                            </font>
+                            <label>ARINC Card: </label>
+                        </object>
+                    </object>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxChoice" name="ID_COMBO_CARD">
+                            <size>120,-1</size>
+                            <content>
+                                <item>1</item>
+                                <item>2</item>
+                                <item>3</item>
+                                <item>4</item>
+                                <item>5</item>
+                                <item>6</item>
+                                <item>7</item>
+                                <item>8</item>
+                                <item>9</item>
+                            </content>
+                        </object>
+                    </object>
+                </object>
+            </object>
+
+            <!-- Group: [ID_COMBO_GROUP] combobox -->
+            
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT</flag>
+                <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxStaticText" name="wxID_STATIC">
+                            <font>
+                                <weight>bold</weight>
+                            </font>
+                            <label>Group: </label>
+                        </object>
+                    </object>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxChoice" name="ID_COMBO_GROUP">
+                            <size>120,-1</size>
+                            <content>
+                                <item>1</item>
+                                <item>2</item>
+                                <item>3</item>
+                                <item>4</item>
+                            </content>
+                        </object>
+                    </object>
+                </object>
+            </object>
+
+            <!-- Parity: [ID_COMBO_PARITY] combobox -->
+            
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT</flag>
+                <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxStaticText" name="wxID_STATIC">
+                            <font>
+                                <weight>bold</weight>
+                            </font>
+                            <label>Parity: </label>
+                        </object>
+                    </object>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxChoice" name="ID_COMBO_PARITY">
+                            <size>120,-1</size>
+                            <content>
+                                <item>NO</item>
+                                <item>ODD</item>
+                                <item>EVEN</item>
+                            </content>
+                        </object>
+                    </object>
+                </object>
+            </object>
+
+            <!-- Tx Channel: [ID_COMBO_TX_CHANNEL] combobox -->
+
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT</flag>
+                <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxStaticText" name="wxID_STATIC">
+                            <font>
+                                <weight>bold</weight>
+                            </font>
+                            <label>Tx Channel: </label>
+                        </object>
+                    </object>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxChoice" name="ID_COMBO_TX_CHANNEL">
+                            <size>120,-1</size>
+                            <content>
+                                <item>1</item>
+                                <item>2</item>
+                                <item>3</item>
+                                <item>4</item>
+                                <item>5</item>
+                                <item>6</item>
+                                <item>7</item>
+                                <item>8</item>
+                                <item>9</item>
+                            </content>
+                        </object>
+                    </object>
+                </object>
+            </object>
+
+            <!-- Tx Speed: [ID_COMBO_TX_SPEED] combobox -->
+
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT</flag>
+                <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxStaticText" name="wxID_STATIC">
+                            <font>
+                                <weight>bold</weight>
+                            </font>
+                            <label>Tx Speed: </label>
+                        </object>
+                    </object>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxChoice" name="ID_COMBO_TX_SPEED">
+                            <size>120,-1</size>
+                            <content>
+                                <item>LOW</item>
+                                <item>HIGH</item>
+                            </content>
+                        </object>
+                    </object>
+                </object>
+            </object>
+
+            <!-- Rx Channel: [ID_COMBO_RX_CHANNEL] combobox -->
+
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT</flag>
+                <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxStaticText" name="wxID_STATIC">
+                            <font>
+                                <weight>bold</weight>
+                            </font>
+                            <label>Rx Channel: </label>
+                        </object>
+                    </object>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxChoice" name="ID_COMBO_RX_CHANNEL">
+                            <size>120,-1</size>
+                            <content>
+                                <item>1</item>
+                                <item>2</item>
+                                <item>3</item>
+                                <item>4</item>
+                                <item>5</item>
+                                <item>6</item>
+                                <item>7</item>
+                                <item>8</item>
+                                <item>9</item>
+                            </content>
+                        </object>
+                    </object>
+                </object>
+            </object>
+
+            <!-- Rx Speed: [ID_COMBO_RX_SPEED] combobox -->
+
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT</flag>
+                <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxStaticText" name="wxID_STATIC">
+                            <font>
+                                <weight>bold</weight>
+                            </font>
+                            <label>Rx Speed: </label>
+                        </object>
+                    </object>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxChoice" name="ID_COMBO_RX_SPEED">
+                            <size>120,-1</size>
+                            <content>
+                                <item>LOW</item>
+                                <item>HIGH</item>
+                            </content>
+                        </object>
+                    </object>
+                </object>
+            </object>
+
+            <!-- Display Interface Host: [ID_EDIT_DI_HOST] edit box -->
+
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT</flag>
+                <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxStaticText" name="wxID_STATIC">
+                            <font>
+                                <weight>bold</weight>
+                            </font>
+                            <label>Display Interface Host: </label>
+                        </object>
+                    </object>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxChoice" name="ID_EDIT_DI_HOST">
+                            <style>wxCB_SORT</style>
+                            <size>120,-1</size>
+                            <content>
+                                <item>(none)</item>
+                                <item>.</item>
+                                <item>LOCALHOST</item>
+                                <item>SUP-MACRAE-DT</item>
+                            </content>
+                        </object>
+                    </object>
+                </object>
+            </object>
+
+            <!-- DIM IP: [ID_EDIT_DIM_IP] edit box -->
+
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT</flag>
+                <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxStaticText" name="wxID_STATIC">
+                            <font>
+                                <weight>bold</weight>
+                            </font>
+                            <label>DIM IP: </label>
+                        </object>
+                    </object>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxTextCtrl" name="ID_EDIT_DIM_IP">
+                            <size>120,-1</size>
+                            <option>1</option>
+                        </object>
+                    </object>
+                </object>
+            </object>
+
+            <!-- DIM BASE PORT: [ID_EDIT_DIM_BASE_PORT] edit box -->
+
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT</flag>
+                <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxStaticText" name="wxID_STATIC">
+                            <font>
+                                <weight>bold</weight>
+                            </font>
+                            <label>DIM BASE PORT: </label>
+                        </object>
+                    </object>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxTextCtrl" name="ID_EDIT_DIM_BASE_PORT">
+                            <size>120,-1</size>
+                            <option>1</option>
+                        </object>
+                    </object>
+                </object>
+            </object>
+
+
+            <!-- LOCAL BASE PORT: [ID_EDIT_LOCAL_BASE_PORT] edit box -->
+
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT</flag>
+                <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxStaticText" name="wxID_STATIC">
+                            <font>
+                                <weight>bold</weight>
+                            </font>
+                            <label>LOCAL BASE PORT: </label>
+                        </object>
+                    </object>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxTextCtrl" name="ID_EDIT_LOCAL_BASE_PORT">
+                            <size>120,-1</size>
+                            <option>1</option>
+                        </object>
+                    </object>
+                </object>
+            </object>
+
+            <!-- Input Label: [ID_EDIT_DIM_INPUT_LABEL] edit box -->
+
+            <object class="sizeritem">
+            <flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT</flag>
+            <object class="wxBoxSizer">
+              <orient>wxHORIZONTAL</orient>
+              <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL</flag>
+                <object class="wxStaticText" name="wxID_STATIC">
+                  <font>
+                    <weight>bold</weight>
+                  </font>
+                  <label>INPUT Label: </label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL</flag>
+                <object class="wxTextCtrl" name="ID_EDIT_DIM_INPUT_LABEL">
+                  <size>120,-1</size>
+                  <option>1</option>
+                </object>
+              </object>
+              </object>
+              </object>
+
+          <!-- Output Label: [ID_EDIT_DIM_OUTPUT_LABEL] edit box -->
+
+          <object class="sizeritem">
+            <flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT</flag>
+            <object class="wxBoxSizer">
+              <orient>wxHORIZONTAL</orient>
+              <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL</flag>
+                <object class="wxStaticText" name="wxID_STATIC">
+                  <font>
+                    <weight>bold</weight>
+                  </font>
+                  <label>OUTPUT Label: </label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL</flag>
+                <object class="wxTextCtrl" name="ID_EDIT_DIM_OUTPUT_LABEL">
+                  <size>120,-1</size>
+                  <option>1</option>
+                </object>
+              </object>
+            </object>
+          </object>
+          
+            <!-- [ID_BUTTON] button -->
+
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT</flag>
+                <border>20</border>
+                <object class="wxButton" name="ID_BUTTON">
+                    <size>120,-1</size>
+                    <font>
+                        <weight>bold</weight>
+                        <size>12</size>
+                    </font>
+                    <default>1</default>
+                    <label>Continue</label>
+                </object>
+            </object>
+        </object>
+    </object>
+</resource>

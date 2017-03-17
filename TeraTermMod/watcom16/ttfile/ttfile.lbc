@@ -1,0 +1,12 @@
+++GetSetupFname.ttpfile.1
+++GetTransFname.ttpfile.2
+++GetMultiFname.ttpfile.3
+++GetGetFname.ttpfile.4
+++SetFileVar.ttpfile.5
+++GetXFname.ttpfile.6
+
+++ProtoInit.ttpfile.7
+++ProtoParse.ttpfile.8
+++ProtoTimeOutProc.ttpfile.9
+++ProtoCancel.ttpfile.10
+

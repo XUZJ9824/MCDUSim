@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7B6CA7A4-E523-43FB-9B09-C3CCF3587147}</ProjectGuid>
+    <RootNamespace>mcduSim</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\wx\include;.\ddc\include;.\techsat\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;__WINDOWS__;__WIN32__;__WXMSW__;STRICT;_DEBUG;__WXDEBUG__;WXDEBUG=1;_AFXDLL;WINVER=0x0501;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>.\wx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(WXWIN)\lib\vc_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalManifestDependencies>%(AdditionalManifestDependencies)</AdditionalManifestDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>wxbase29ud_xml.lib;wxbase29ud.lib;wxzlibd.lib;wxregexud.lib;wxexpatd.lib;kernel32.lib;user32.lib;advapi32.lib;comctl32.lib;comdlg32.lib;gdi32.lib;odbc32.lib;odbccp32.lib;ole32.lib;oleaut32.lib;rpcrt4.lib;shell32.lib;uuid.lib;wininet.lib;winmm.lib;winspool.lib;wsock32.lib</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\wx\include;.\ddc\include;.\techsat\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;__WINDOWS__;__WIN32__;__WXMSW__;STRICT;NDEBUG;_AFXDLL;WINVER=0x0501;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>.\wx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(WXWIN)\lib\vc_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>wxbase29u_xml.lib;wxbase29u.lib;wxzlib.lib;wxregexu.lib;wxexpat.lib;kernel32.lib;user32.lib;advapi32.lib;comctl32.lib;comdlg32.lib;gdi32.lib;odbc32.lib;odbccp32.lib;ole32.lib;oleaut32.lib;rpcrt4.lib;shell32.lib;uuid.lib;wininet.lib;winmm.lib;winspool.lib;wsock32.lib</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CConfDlg.cpp" />
+    <ClCompile Include="log_printf.cpp" />
+    <ClCompile Include="mcduDlgRes.cpp" />
+    <ClCompile Include="mcdusim.cpp" />
+    <ClCompile Include="MSecTime.cpp" />
+    <ClCompile Include="prot_739A.cpp" />
+    <ClCompile Include="pythonInt.cpp" />
+    <ClCompile Include="SetAppIcon.cpp" />
+    <ClCompile Include="Stubs_for_DDC.cpp" />
+    <ClCompile Include="Stubs_for_TechSAT.cpp" />
+    <ClCompile Include="termScreen.cpp" />
+    <ClCompile Include="transpOldDDC.cpp" />
+    <ClCompile Include="transport.cpp" />
+    <ClCompile Include="transportDDC.cpp" />
+    <ClCompile Include="transportPipe.cpp" />
+    <ClCompile Include="transportTcp.cpp" />
+    <ClCompile Include="transportUdp.cpp" />
+    <ClCompile Include="transpTechsat.cpp" />
+    <ClCompile Include="WhatDebuggerIsAttached.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mcduDlgs.xrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Update McduDlgRes.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">call MakeNewMcduDlgRes.bat
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">McduDlgRes.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Update McduDlgRes.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">call MakeNewMcduDlgRes.bat
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)%(Extension);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">McduDlgRes.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="res\mcdu-cfg.ico" />
+    <None Include="res\MCDU.bmp" />
+    <None Include="res\MCDU_cursorOver.bmp" />
+    <None Include="res\MCDU_pressed.bmp" />
+    <None Include="res\mcdusim.ico" />
+    <None Include="res\TCP-mouse.bmp" />
+    <None Include="res\TCP-normal.bmp" />
+    <None Include="res\TCP-pressed.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CConfDlg.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="defs.h" />
+    <ClInclude Include="export_string.h" />
+    <ClInclude Include="log.h" />
+    <ClInclude Include="MCDU_key.h" />
+    <ClInclude Include="mcdusim.h" />
+    <ClInclude Include="MSecTime.h" />
+    <ClInclude Include="prot_739A.h" />
+    <ClInclude Include="pythonint.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="skin.h" />
+    <ClInclude Include="termScreen.h" />
+    <ClInclude Include="transpOldDDC.h" />
+    <ClInclude Include="transport.h" />
+    <ClInclude Include="transportDDC.h" />
+    <ClInclude Include="transportPipe.h" />
+    <ClInclude Include="transportTcp.h" />
+    <ClInclude Include="transportUdp.h" />
+    <ClInclude Include="transpTechsat.h" />
+    <ClInclude Include="WhatDebuggerIsAttached.h" />
+    <ClInclude Include="winsock2_wrapper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="mcdusim.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="wxrc-util\wxrc_vc8.vcxproj">
+      <Project>{0cccc9aa-581e-5616-b347-f93aad183bc4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

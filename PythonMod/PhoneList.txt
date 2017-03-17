@@ -1,0 +1,204 @@
+"DROUIN, Charles" 1119
+"DUGUAY, Irma"	1135
+"DUMOUCHEL, Linda"	3242	CMO																																																																							
+"DUNBAR, Patti "	1265	FIN																																																																							
+"DUNLOP, Warren"	1242	MAR																																																																							
+"DU TOIT, Louis"	1236	ENG																																																																							
+"DURIE, Rob"	1227	MAT																																																																							
+"DUSSAULT, Pierre"	1413	FAC																																																																							
+"EARL, Robert"	3252	SATA	C1																																																																						
+"EDGETT, Steve "	1210	SATA																																																																							
+"ENRIGHT, Mark "	1188	MAT	B2																																																																						
+"ETMANSKI, Nancy"	3245	MAR	D2																																																																						
+"EVRAIRE, Bruce"	3255	PC	C1																																																																						
+"FARMER, Kathy"	2574	SALE	D2																																																																						
+"FERGUSSON, Mike"	1228	OPS																																																																							
+"FEX, Shelley(A/P)"	1259	FIN	A2																																																																						
+"FEZZANI, Mohamed"	3809	FIN	A2																																																																						
+"FLEGEL, Christine"	1230	ADM	A2																																																																						
+"FOSTER, Danny"	1190	S&R																																																																							
+"FRACKER, Tony"	1233	SUP																																																																							
+"FRASER, Morgan"	1156	SATA	C1																																																																						
+"FRASER, Shallan"	1222	DOC	A2																																																																						
+"FRENKEL, Yuri"	1119	MFG																																																																							
+"FRY, Kelly"	2555	MAR	A2																																																																						
+"GARNER, Alan"	1296	FIN	D2																																																																						
+"GERMINO,Bernadette"	3267	QA																																																																							
+"GONZALVO, Agnes"	3501	MFG																																																																							
+"GOODMAN, Mark"	1103	ENG	B2																																																																						
+"GORLING, Kent"	1157	MFG																																																																							
+"GOULET, Jean-Marc"	1119	MFG																																																																							
+"GRAHAM, Derek"	2426	ENG	B2																																																																						
+"GRIFFITHS, Jim"	2521	ENG																																																																							
+"GROBBELAAR, Hannes"	2412	ENG	B2																																																																						
+"HALKA, Ron "	3244	QA																																																																							
+"HAMMEL, Deborah"	1276	CMO	D1																																																																						
+"HARRIS, Crystal"	1203	HR																																																																							
+"HARRIS, Kate"	2927	ENG	B2																																																																						
+"HAYES, Cliff"	2420	PUR	B2																																																																						
+"HEBB, Gary "	2385	 	CO																																																																						
+"HELLE, Nils "	1155	MAR	CO																																																																						
+"HILFI, Hal"	2402	MFG																																																																							
+"HODGKINSON, Bruce"	3209	ENG																																																																							
+"HOMER, Lynn"	3243	QA	B2																																																																						
+"HORLICK, Jeff"	3805	S&R																																																																							
+"HORNER, Leah"	1168	PC	C1																																																																						
+"HORVATH, Gerg"	2322	DOC	B2																																																																						
+"HUANG, Zhigang"	1108	DOC	B2																																																																						
+"HURST, Darin"	2480	SUP	A2																																																																						
+"HURST, Bobbie"	0	REC																																																																							
+"HUYNH, Chuong"	1245	MFG																																																																							
+"HUYNH, Tac"	1402	MFG																																																																							
+"HYSLOP, Cheryl"	2425	EMP	C1																																																																						
+"IBRAHIM, Nagui"	1442	ENG																																																																							
+"IWANIUK, Marko"	1144	ENG	B2																																																																						
+"JAHANGIR,Hughir"	1119	MFG																																																																							
+"JAMA, Hassan"	1136	MFG																																																																							
+JANSE VAN RENSBREG	1119	MFG																																																																							
+"JESSUP, Bradley"	2450	ENG																																																																							
+"JIANG, Wilson"	2311	SUP																																																																							
+"JOHNS, Loralie"	2532	ENG	B2																																																																						
+"JOHNS, Lori"	2435	HR																																																																							
+"JOHNSON,Sandra"	3812	ENG																																																																							
+"JOHNSON, Tom"	3228																																																																								
+"JOHNSTON, Heather"	1116	SATA	A2																																																																						
+"JUDD, Kevin"	2525	MIS	 																																																																						
+"JUDD, Peter"	2427	C&L																																																																							
+"KIERKUS,Joanna"	1416	QA																																																																							
+"KING, Ryan"	2320	SATA	C1 																																																																						
+"KIRK, Howard"	2445	SATA	A2																																																																						
+"KIRKLAND, Judi A/R/AP"	2576	FIN	A2																																																																						
+"KIRKWOOD, Tim"	3215	SUP																																																																							
+"KNAZKO, Peter"	3231	SALE																																																																							
+"KNUTH, Korey"	1465	MAT	B2																																																																						
+"LANDRY, Donald"	1011	MFG																																																																							
+"LAROSE,Cathy"	3235	MFG																																																																							
+"LAVIOLETTE, Jean"	2418	ENG	B2																																																																						
+"LAVOIE, Guy"	1458	FAC	C1																																																																						
+"LEAKER, David"	1119	MFG																																																																							
+"LEBRUN, Danielle"	2371	MFG																																																																							
+"LECLERC, Gilles"	1126	ENG	B2																																																																						
+"L'ECUYER, Rick"	2355	SATA	D2 																																																																						
+"LEONARDO, Ernesto"	1245	MFG																																																																							
+"LEVITON, Robert"	1050	SATA	C1																																																																						
+"LI, Wenbo"	1289	ENG	C2 																																																																						
+"LONG, Bill"	3225	TRAC																																																																							
+"LUCAR, Salvador"	2456	ENG	C2 																																																																						
+"LY, Nhien"	1402	MFG																																																																							
+"LY, Ta Sai"	1157	MFG																																																																							
+"LY, Thoi"	2399	MFG																																																																							
+"MACMILLAN, Quddus"	2464	TRA	D2 																																																																						
+"MALI, Satish"	1246	ENG																																																																							
+"MARCHAND, Paul"	3213	ENG																																																																							
+"MARTYUSHEVA, Marina"	3268	ADM	COR																																																																						
+"McCREADY, Les"	2308	ENG	B2																																																																						
+"McISAAC, Sheileagh"	3198	DOC																																																																							
+"McMAHON, Kathy"	3251	PUR	B2																																																																						
+"McMULLEN, Scott"	1243	MIS	C1																																																																						
+"MECHURA, Kyle"	3206	CON																																																																							
+"MENARD, Jean"	2301	AER																																																																							
+"MENDOZA, Marlon"	3501	MFG																																																																							
+"MICHELS, Jennifer"	3220	ENG																																																																							
+"MILANOVIC,  Ivan"	1232	MFG	C1																																																																						
+"MILLAR, Gordon"	3211	TRAC																																																																							
+"MILNER, Jesse"	3254	CON																																																																							
+"MINHAS, Amit"	2370	SATA	A2 																																																																						
+"MISKOWICZ, Roger"	3212	ENG																																																																							
+"MISZTAL, Ed"	2507	ENG	C2 																																																																						
+"MOBLEY, Duncan"	1009	ENG																																																																							
+"MOCANITA, Mihaela"	1226	ENG	A2 																																																																						
+"MOFFATT, Dan"	2429	ENG	C2 																																																																						
+"MOMY, Stephane"	1247	TRAC																																																																							
+"MULDER, Rob"	2410	MFG	C1																																																																						
+"MULDER, Sue"	1426	CMO	D1																																																																						
+"MULLIGAN, Brian"	3218	S&R																																																																							
+"MURCHISON, Kate"	1415	MAR	A2 																																																																						
+"MURPHY, Steve"	1244	ENG																																																																							
+"MUSCLOW, Tim"	3287	ENG	B2																																																																						
+"NEEDHAM, Maureen"	2465	MAT	B2																																																																						
+"NGUYEN, Hung"	2501	MFG																																																																							
+"NGUYEN, Minh"	3286	SATA	D2 																																																																						
+"NGUYEN, Tuan"	3234	MFG																																																																							
+"NGUYEN,Van"	2501	MFG																																																																							
+"NIRO, Tony"	1003	ENG																																																																							
+"NIXON, Dean"	1407	PUR																																																																							
+"NJI,Klaus"	1005	SATA																																																																							
+"NUGENT, Tom"	3227	ENG																																																																							
+"OUACH, Abdelali"	3210	ENG																																																																							
+"PANET-RAYMOND,Deric"	1012	ENG																																																																							
+"PANG, Siv Buoy"	1124	MFG																																																																							
+"PARKES, Shannon"	1119	MFG																																																																							
+"PASTUSZAK,Pawel"	2433	ENG																																																																							
+"PAUL, Clyde"	1119	MFG																																																																							
+"PEETERS,Giles"	2285	MAR																																																																							
+"PEPE, John"	1134	ENG																																																																							
+"PHILLIPS,Gillian"	1266	ADM																																																																							
+"PHILLIPS, Richard"	1427	MIS	C1																																																																						
+"PIERCEY, Ken"	1223	ENG	B2																																																																						
+"POIRIER,Benoit"	2452	ENG	 																																																																						
+"POSTOLSKI, Lucyna"	1150	QA																																																																							
+"PRENDERGAST, Jane"	2441	MFG																																																																							
+"PRESTON, Mary"	2421	DOC	B2																																																																						
+"PURSER, David"	2359	PUR	B2																																																																						
+"QIU, Lianxiang"	3208	ENG																																																																							
+"QUINN, Tom"	1163	MAT	B2																																																																						
+"QUISTO, Eduardo"	2399	MFG																																																																							
+"RATHWELL, Donna"	3281	ENG																																																																							
+"REKSC, Wladyslaw"	3269	ENG																																																																							
+"RENNER, Rich"	1107	SATA	C1																																																																						
+"RICHARDSON,Daniel"	1234	MFG																																																																							
+"RHEAUME, Cathy"	1208	FIN																																																																							
+"ROBILLARD, Hugh"	2321	ENG	B2																																																																						
+"ROBITAILLE,Gilles"	2543	ENG																																																																							
+"RODRIGUEZ, Jose Juan"	2373	MFG	
+"ROITBOURD, Alex"	1119	MFG	
+"RUEST, Sean"	2444	SUP	C2
+"RYAN, Julie"	1162	ADM	B2
+"SAMOUR,Raymond"	1109	ENG	
+"SAXENA, Nikita"	2457	ENG	
+"SCHAUBS, Lise"	2325	MFG	
+"SCOTT,Randy"	2501	MFG	
+"SCUTARU, Stefan"	1284	MAR	
+"SHANK, Debbie"	1149	CON	
+"SIMPSON, Paul"	1007	ENG	
+"SLOAN, David"	2415	FIN	
+"SMITH, Stephen"	2505	SATA	
+"SNOW, Gord"	2413	ENG	C2
+"SO, Davy"	2408	ENG	
+"SONNENBURG, Keven"	1431	C&L	B1
+"SOUKSANH, Sam"	1250	MFG	
+"SPEISER, Kim"	1137	PUR	B2
+"SPOKOINYI, Igor"	1268	ENG	C2
+"STEPHEN-AYUB, Sharoon"	1119	MFG	
+"STEVENS, Alan"	2578	ENG	
+"STRICKLAND, Peter"	2351	ENG	C2
+"STURGEON, Chris"	1196	ENG	B2
+"SUGGITT, Gord"	1161	ENG	C2
+"SUTHERLAND, Colin "	2383	ENG	B2
+"SWIERCZYNSKI, Tom"	2352	ENG	
+"SZCZYGIEL, Kim"	3289	MAT	
+"TADIELLO, Mark"	1255	QA	B2
+"THEKKEVEETTIL, Reji James"	1251	MFG	
+"THIBAULT, Vincent"	2417	SATA	C1
+"TOM, David"	3223	ENG	
+"TREARM, Yuly"	3501	MFG	
+"TRICKEY, James"	1140	SATA	C1
+"TROST,Robert"	2405	SATA	
+"TU, Ming-Wang"	1102	ENG	B2
+"U, Victor"	1013	ENG	
+"VANDERLOO, ERIC"	2414	ENG	B2
+"VARANDA, Marcelo"	3221	ENG	
+"VO, Phong"	1119	MFG	
+"VORONEY, Ben"	2451	ENG	B2
+"WALKER, Dave"	1218	MIS	
+"WALKER, Joanne "	2463	GM	
+"WALSH, John"	2533	MFG	
+"WEBB, Chris"	3205	DOC	 
+"WILLIAMSON, Rod"	3264	SUP	
+"WILSON, Scot"	3207	ENG	 
+"WONG, Desmond"	1119	MFG	
+"WONG, Jane"	2411	SATA	 
+"WONG, Lucas"	2460	SATA	 
+"WOOD, Peter"	3226	ENG	 
+"WOODEND, Richard"	1186	EMP	
+			

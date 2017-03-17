@@ -1,0 +1,122 @@
+Help on module emstools:
+
+NAME
+  emstools
+
+FILE
+  c:\mvprojects\mcdusim\pythonmod\emstools.py
+
+CLASSES
+  McduSimCom
+
+  McduSimCom class (from emstools module) abstracts the interface with EMS-Satcom MCDU Simulator.
+  Its constructor attempts to connect to all 4 MCDUs. McduSimCom constructor takes two optional
+  parameters; the first is used to enable/disable the logging (1->enable, 0->disable). The second
+  is the IP address of a remote McduSim. Defaults (no parameter given) are log disabled and
+  "localhost".
+
+Methods:
+========
+
+  GetScreenTxt (self, line, col, numchars, mcdu=1)
+  GetVersion (self)
+  MakeScreenshot (self, mcdu=1)
+  SendKey (self, key, mcdu=1)
+  SendText (self, text, mcdu=1)
+  SetKeyDelay (self, timeInSeconds)
+    
+
+  
+  Methods defined here:
+  
+  GetScreenTxt(self, line, col, numchars, mcdu=1)
+  ===============================================
+      Returns the text from the active MCDU screen.
+      range: line 1~14, col 1~24. If the request overflows it will return an error
+      (ex: mcduObj.GetScreenTxt(1, 23, 2) ->as len = 2 it is requesting a 25th character).
+      
+      Retuns:
+          screen text or:
+          'badParameter'
+          'BAD_MCDU' is mcdu is not 1~4;
+          'MCDU_NOT_CONNECTED' no connection with mcdu;
+              note: connection attempt happens only during Obj construction;
+          'BAD_KEY_CHAR' or 'BAD_KEY_TXT' if provided a bad key;
+          'FAIL_TO_SEND_DATA' if it was not able to transmit data to MCDU;
+          'TIMEOUT' MCDU did not respond;
+  
+  GetVersion(self)
+  ================
+      Return a text with the current version number on format: 'N.NN'.
+  
+  IsMcduConnected(self, mcdu=1)
+      IsMcduConnected returns True or False according to the MCDU connection state.
+  
+  MakeScreenshot(self, mcdu=1)
+  ============================
+      MCDU stores a screenshot on its default directory. The filename is: "exportedMcduScreen.jpg"
+      It is recommended to have the Python Application to change the name after MCDU has saved the
+      file. This request is asynchronous  and there is a 1 second delay to return.
+      
+      Returns:
+          'OK'  if OK;
+          'BAD_MCDU' is mcdu is not 1~4;
+          'MCDU_NOT_CONNECTED' no connection with mcdu;
+              note: connection attempt happens only during Obj construction;
+          'FAIL_TO_SEND_DATA' if it was not able to transmit data to MCDU;
+          'TIMEOUT' MCDU did not respond;
+          'ERROR_FROM_MCDU' MCDU had replied with error.
+  
+  SendKey(self, key, mcdu=1)
+  ==========================
+      SendKey accepts the following characters:
+        " 0123456789ABCDEFGHIJKLMNOPQRSTUVXYWZ./"
+      It also accepts the follwing characters represented by uppercase words:
+          CLR, BACKSPACE, SEL1~SEL6, SER1~SER6, PREV_PAGE, NEXT_PAGE
+          
+      Returns:
+          'OK'  if OK;
+          'BAD_MCDU' is mcdu is not 1~4;
+          'MCDU_NOT_CONNECTED' no connection with mcdu;
+              note: connection attempt happens only during Obj construction;
+          'BAD_KEY_CHAR' or 'BAD_KEY_TXT' if provided a bad key;
+          'FAIL_TO_SEND_DATA' if it was not able to transmit data to MCDU;
+          'TIMEOUT' MCDU did not respond;
+          'ERROR_FROM_MCDU' MCDU had replied with error.
+  
+  SendLastKey(self, mcdu=1)
+  =========================
+      SendLastKey will resend the last key with repeat flag set.
+      Note: the last key value is a global among MCDUs. Therefore, it is just valid
+      to call SendLastKey after a SendKey to the same MCDU. Otherwise, it can send a wrong
+      repeat ket. Here is a wrong situation:
+          mcduObj = emstoolsMcduSimCom()
+          mcduObj.SendKey("A",1) # char A is sent to MCDU 1
+          mcduObj.SendKey("B",2) # char B is sent to MCDU 2
+          mcdu.SendLastKey(1)    # WRONG... as B is sent as repeat key to MCDU 1 (which had A).
+      
+      Returns:
+          'OK'  if OK;
+          'BAD_MCDU' is mcdu is not 1~4;
+          'MCDU_NOT_CONNECTED' no connection with mcdu;
+              note: connection attempt happens only during Obj construction;
+          'FAIL_TO_SEND_DATA' if it was not able to transmit data to MCDU;
+          'TIMEOUT' MCDU did not respond;
+          'ERROR_FROM_MCDU' MCDU had replied with error.
+  
+  SendText(self, text, mcdu=1)
+  ============================
+      SendText calls SendKey for each character int the text.
+      returns same then SendKey.
+  
+  SetKeyDelay(self, timeInSeconds)
+  ================================
+      Once Python gets an ack back from SDU and MCDU it waits
+      to return to the calles. This function sets this time.
+      The default time is 0.3 seconds
+      
+      Return: non.
+  
+  __del__(self)
+  
+  __init__(self, log=0)
